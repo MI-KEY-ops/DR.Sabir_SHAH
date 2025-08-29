@@ -19,8 +19,6 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  basePath: '/vitae',
-  assetPrefix: '/vitae/',
   typescript: {
     ignoreBuildErrors: true,
   },
