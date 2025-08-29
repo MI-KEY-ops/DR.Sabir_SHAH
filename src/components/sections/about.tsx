@@ -50,7 +50,7 @@ export default function About() {
           >
             <div className="relative aspect-[3/4] rounded-lg overflow-hidden shadow-2xl group">
               <Image
-                src="/dr-sabir-shah.jpg"
+                src="https://storage.googleapis.com/aai-web-samples/public/user_6.jpg"
                 alt="Dr. Sabir Shah"
                 width={600}
                 height={800}
