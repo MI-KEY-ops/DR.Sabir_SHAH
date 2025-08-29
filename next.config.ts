@@ -27,6 +27,11 @@ const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  devServer: {
+    allowedDevOrigins: [
+      'https://6000-firebase-studio-1756459260056.cluster-6vyo4gb53jczovun3dxslzjahs.cloudworkstations.dev',
+    ],
+  },
 };
 
 export default nextConfig;
