@@ -6,24 +6,18 @@ import { SectionWrapper } from "@/components/section-wrapper";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
-import { GithubIcon, LinkedinIcon } from "@/components/icons";
-import { Mail } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 
 const socialLinks = [
   {
-    name: "LinkedIn",
-    icon: LinkedinIcon,
-    href: "https://www.linkedin.com",
-  },
-  {
-    name: "GitHub",
-    icon: GithubIcon,
-    href: "https://www.github.com",
-  },
-  {
     name: "Email",
     icon: Mail,
-    href: "mailto:sabir.shah@example.com",
+    href: "mailto:Anisamips@gmail.com",
+  },
+  {
+    name: "Phone",
+    icon: Phone,
+    href: "tel:+923004205522",
   },
 ];
 
@@ -32,7 +26,7 @@ export default function Contact() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const mailtoLink = `mailto:sabir.shah@example.com?subject=Message from ${name} (${email})&body=${encodeURIComponent(
+  const mailtoLink = `mailto:Anisamips@gmail.com?subject=Message from ${name} (${email})&body=${encodeURIComponent(
     message
   )}`;
 
