@@ -1,7 +1,7 @@
 "use client";
 
 import type { SVGProps } from "react";
-import { motion } from "framer-motion";
+import { motion, type SVGMotionProps } from "framer-motion";
 
 export const StethoscopeIcon = (props: SVGProps<SVGSVGElement>) => (
   <svg
@@ -88,7 +88,7 @@ export const MicroscopeIcon = (props: SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-export const EkgLine = (props: SVGProps<SVGSVGElement>) => (
+export const EkgLine = (props: SVGMotionProps<SVGSVGElement>) => (
   <motion.svg
     width="100%"
     height="40"
