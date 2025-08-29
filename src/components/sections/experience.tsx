@@ -7,32 +7,39 @@ import { Briefcase } from "lucide-react";
 
 const experienceData = [
   {
-    role: "Consultant Cardiologist",
-    institution: "City General Hospital",
-    period: "2015 - Present",
+    role: "Medical Officer BPs-17",
+    institution: "Bajaur District, KPK",
+    period: "Present",
     description:
-      "Leading the cardiology department, specializing in interventional procedures and patient care for complex cardiovascular conditions.",
+      "Serving as a Medical Officer, providing essential healthcare services to the community in Bajaur District.",
   },
   {
-    role: "Cardiology Fellowship",
-    institution: "University of Medicine",
-    period: "2012 - 2015",
+    role: "Senior Medical Officer",
+    institution: "Roshan Specialized Hospital",
+    period: "Previous",
     description:
-      "Completed a rigorous fellowship in interventional cardiology, gaining expertise in advanced diagnostic and therapeutic techniques.",
+      "Held a senior position, overseeing medical operations and patient care at a specialized hospital.",
   },
   {
-    role: "Internal Medicine Residency",
-    institution: "St. Luke's Medical Center",
-    period: "2009 - 2012",
+    role: "Union Council Medical Officer",
+    institution: "Polio Programs, Bajaur",
+    period: "Previous",
     description:
-      "Gained comprehensive experience in internal medicine, with a focus on critical care and cardiovascular health.",
+      "Worked as a UCMO in challenging areas, contributing to polio eradication efforts through vaccination and program management.",
   },
   {
-    role: "Medical Internship",
-    institution: "Hopewell Clinic",
-    period: "2008 - 2009",
+    role: "House Job",
+    institution: "Saidu Teaching Hospital, Swat",
+    period: "Previous",
     description:
-      "Foundation year providing primary care and initial exposure to various medical specialties, which ignited my passion for cardiology.",
+      "Completed house job in multiple departments including Cardiology (CCU), Medicine, Surgery, and Ophthalmology.",
+  },
+  {
+    role: "Internship",
+    institution: "People's Republic of China",
+    period: "Previous",
+    description:
+      "One-year medical internship as a student, with commendations from professors for performance and dedication.",
   },
 ];
 

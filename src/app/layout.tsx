@@ -3,8 +3,8 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'Vitae - Dr. Evelyn Reed',
-  description: 'Portfolio of Dr. Evelyn Reed, Consultant Cardiologist',
+  title: 'Vitae - Dr. Sabir Shah',
+  description: 'Portfolio of Dr. Sabir Shah, Medical Officer',
 };
 
 export default function RootLayout({

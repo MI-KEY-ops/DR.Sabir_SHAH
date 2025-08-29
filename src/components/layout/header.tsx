@@ -12,7 +12,6 @@ const navLinks = [
   { name: "About", href: "#about" },
   { name: "Experience", href: "#experience" },
   { name: "Skills", href: "#skills" },
-  { name: "Publications", href: "#publications" },
   { name: "Awards", href: "#awards" },
   { name: "Contact", href: "#contact" },
 ];
@@ -58,7 +57,7 @@ export default function Header() {
         <Link href="#" className="flex items-center gap-2">
           <Stethoscope className="h-8 w-8 text-primary" />
           <span className="text-xl font-bold text-primary font-headline">
-            Dr. Evelyn Reed
+            Dr. Sabir Shah
           </span>
         </Link>
 

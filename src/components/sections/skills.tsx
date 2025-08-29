@@ -8,50 +8,17 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import {
-  StethoscopeIcon,
-  SyringeIcon,
-  DnaIcon,
-  MicroscopeIcon,
-} from "@/components/icons";
-import { HeartPulse, TestTube, Laptop } from "lucide-react";
+import { StethoscopeIcon } from "@/components/icons";
+import { HeartPulse, TestTube, Users, Laptop, BriefcaseMedical, Eye, ShieldQuestion } from "lucide-react";
 
 const skills = [
-  {
-    name: "Echocardiography",
-    icon: StethoscopeIcon,
-    detail: "Advanced 2D/3D and stress echocardiography.",
-  },
-  {
-    name: "Cardiac Catheterization",
-    icon: SyringeIcon,
-    detail: "Expert in diagnostic and interventional procedures.",
-  },
-  {
-    name: "Electrophysiology",
-    icon: HeartPulse,
-    detail: "Diagnosis and treatment of heart rhythm disorders.",
-  },
-  {
-    name: "Genetic Cardiology",
-    icon: DnaIcon,
-    detail: "Assessing inherited cardiac conditions.",
-  },
-  {
-    name: "Pathology Analysis",
-    icon: MicroscopeIcon,
-    detail: "Microscopic examination of tissue samples.",
-  },
-  {
-    name: "Clinical Trials",
-    icon: TestTube,
-    detail: "Principal investigator for multiple cardiovascular trials.",
-  },
-  {
-    name: "Telemedicine",
-    icon: Laptop,
-    detail: "Providing remote consultations and patient monitoring.",
-  },
+  { name: "Cardiology (CCU)", icon: HeartPulse, detail: "Experience in Coronary Care Unit." },
+  { name: "Internal Medicine", icon: StethoscopeIcon, detail: "Comprehensive care for adults." },
+  { name: "General Surgery", icon: BriefcaseMedical, detail: "Experience in surgical procedures." },
+  { name: "Ophthalmology", icon: Eye, detail: "Experience in eye care." },
+  { name: "Public Health", icon: Users, detail: "Program management and outreach." },
+  { name: "Counseling", icon: ShieldQuestion, detail: "Counseling for students and patients." },
+  { name: "Leadership", icon: Laptop, detail: "Medical staff and department management." },
 ];
 
 const containerVariants = {
@@ -85,8 +52,7 @@ export default function Skills() {
           Professional Skills
         </h2>
         <p className="text-lg max-w-3xl mx-auto text-muted-foreground">
-          A combination of clinical expertise, procedural skills, and modern
-          medical technologies.
+          A combination of clinical expertise, leadership, and community health skills.
         </p>
       </div>
 

@@ -81,13 +81,13 @@ export default function Hero() {
             variants={titleItem}
             className="text-5xl font-extrabold tracking-tight font-headline text-primary sm:text-6xl md:text-7xl"
           >
-            Dr. Evelyn Reed
+            Dr. Sabir Shah
           </motion.h1>
           <motion.p
             variants={titleItem}
             className="mt-4 max-w-md text-xl text-muted-foreground sm:max-w-2xl md:text-2xl"
           >
-            Consultant Cardiologist
+            Medical Officer
           </motion.p>
         </motion.div>
       </div>

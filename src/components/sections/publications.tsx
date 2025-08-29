@@ -21,37 +21,22 @@ import {
 } from "@/components/ui/dialog";
 import { Newspaper, Link as LinkIcon } from "lucide-react";
 
-const publications = [
-  {
-    title: "Advancements in Non-Invasive Cardiac Imaging",
-    journal: "Journal of Cardiology",
-    year: "2022",
-    doi: "10.1234/joc.2022.5678",
-    abstract:
-      "This review explores recent advancements in non-invasive cardiac imaging techniques, including cardiac MRI, CT, and echocardiography, and their impact on clinical practice.",
-  },
-  {
-    title: "The Role of AI in Predicting Cardiovascular Events",
-    journal: "AI in Medicine",
-    year: "2021",
-    doi: "10.5678/aim.2021.1234",
-    abstract:
-      "A groundbreaking study on leveraging machine learning algorithms to predict major adverse cardiovascular events using electronic health records.",
-  },
-  {
-    title: "Novel Therapeutic Targets for Heart Failure",
-    journal: "The Lancet",
-    year: "2020",
-    doi: "10.1111/lancet.2020.9012",
-    abstract:
-      "Identifies and discusses several promising new therapeutic targets for the treatment of both systolic and diastolic heart failure.",
-  },
-];
+const publications: Publication[] = [];
 
-type Publication = (typeof publications)[0];
+type Publication = {
+  title: string;
+  journal: string;
+  year: string;
+  doi: string;
+  abstract: string;
+};
 
 export default function Publications() {
   const [selectedPub, setSelectedPub] = useState<Publication | null>(null);
+
+  if (publications.length === 0) {
+    return null;
+  }
 
   return (
     <SectionWrapper id="publications" className="">

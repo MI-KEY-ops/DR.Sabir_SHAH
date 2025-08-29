@@ -3,7 +3,6 @@ import Hero from '@/components/sections/hero';
 import About from '@/components/sections/about';
 import Experience from '@/components/sections/experience';
 import Skills from '@/components/sections/skills';
-import Publications from '@/components/sections/publications';
 import Awards from '@/components/sections/awards';
 import Contact from '@/components/sections/contact';
 import Footer from '@/components/layout/footer';
@@ -17,7 +16,6 @@ export default function Home() {
         <About />
         <Experience />
         <Skills />
-        <Publications />
         <Awards />
         <Contact />
       </main>

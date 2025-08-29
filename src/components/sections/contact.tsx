@@ -23,7 +23,7 @@ const socialLinks = [
   {
     name: "Email",
     icon: Mail,
-    href: "mailto:evelyn.reed@example.com",
+    href: "mailto:sabir.shah@example.com",
   },
 ];
 
@@ -32,7 +32,7 @@ export default function Contact() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const mailtoLink = `mailto:evelyn.reed@example.com?subject=Message from ${name} (${email})&body=${encodeURIComponent(
+  const mailtoLink = `mailto:sabir.shah@example.com?subject=Message from ${name} (${email})&body=${encodeURIComponent(
     message
   )}`;
 

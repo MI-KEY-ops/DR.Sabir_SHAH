@@ -10,14 +10,14 @@ const aboutCards = [
   {
     title: "License",
     icon: BadgeCheck,
-    content: "Fully licensed Medical Practitioner, State Board Certified.",
-    details: "License No: 12345-67890",
+    content: "Fully licensed Medical Practitioner, PMDC approved.",
+    details: "Reg No: 28665-N (Valid until 24/02/2028)",
   },
   {
-    title: "Specialization",
+    title: "Graduation",
     icon: GraduationCap,
-    content: "Specialized in Interventional Cardiology and Electrophysiology.",
-    details: "Fellow of the American College of Cardiology (FACC)",
+    content: "Graduated from Capital Medical University, Beijing, China.",
+    details: "MBBS (Medical Doctor) - 1st Division (2013)",
   },
 ];
 
@@ -29,8 +29,7 @@ export default function About() {
           About Me
         </h2>
         <p className="text-lg max-w-3xl mx-auto text-muted-foreground">
-          A dedicated and compassionate cardiologist with over 15 years of
-          experience in diagnosing and treating cardiovascular diseases.
+          Beyond the clinic: A commitment to health and human dignity.
         </p>
       </div>
 
@@ -43,17 +42,10 @@ export default function About() {
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           <p>
-            My journey in medicine began with a profound fascination for the
-            human heart. Today, as a board-certified cardiologist, I am
-            committed to providing my patients with the highest standard of
-            care, blending cutting-edge technology with a personalized,
-            empathetic approach.
+            Dr. Sabir Shah is an enthusiastic and dedicated professional medical doctor who graduated from Capital Medical University, Beijing, China, with extensive experience across all areas of medicine and surgeries. As an exceptional leader, he demonstrates the ability to develop and motivate others to achieve targets through hard work, making him a valuable asset to any organization.
           </p>
           <p>
-            I believe in empowering patients through education and collaborative
-            decision-making, ensuring they are active participants in their own
-            health journey. My goal is not just to treat disease, but to improve
-            quality of life and promote long-term wellness.
+            He possesses strong project management capabilities, successfully managing projects from conception through to completion. A proactive individual with a logical approach to challenges, Dr. Shah performs effectively even within highly pressurized working environments. Beyond his medical expertise, he serves as a social activist and is actively involved in community health initiatives, particularly focusing on counseling services for students, drug abuse patients, and child health education.
           </p>
         </motion.div>
 

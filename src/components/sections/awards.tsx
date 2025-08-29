@@ -17,29 +17,29 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const awards = [
   {
-    title: "Cardiologist of the Year",
+    title: "PMDC Permanent Registration",
+    year: "2028",
+    issuer: "Pakistan Medical & Dental Council",
+  },
+  {
+    title: "WHO Certification",
     year: "2023",
-    issuer: "National Medical Board",
+    issuer: "Integrated Disease Surveillance & Response",
   },
   {
-    title: "Excellence in Patient Care",
-    year: "2021",
-    issuer: "State Health Association",
-  },
-  {
-    title: "Top Innovator in Cardiology",
+    title: "COVID-19 Training Course",
     year: "2020",
-    issuer: "Global Medical Research",
+    issuer: "University of Health Sciences Lahore",
   },
   {
-    title: "Community Service Award",
-    year: "2019",
-    issuer: "City Healthcare Foundation",
+    title: "MBBS, 1st Division",
+    year: "2013",
+    issuer: "Capital Medical University, Beijing",
   },
   {
-    title: "Research Gold Medal",
-    year: "2018",
-    issuer: "University of Medicine",
+    title: "Sports Leadership",
+    year: "",
+    issuer: "Captain of Cricket & Football Teams",
   },
 ];
 
@@ -52,11 +52,10 @@ export default function Awards() {
     <SectionWrapper id="awards" className="bg-secondary">
       <div className="text-center mb-12">
         <h2 className="text-4xl font-bold font-headline text-primary mb-4">
-          Awards & Achievements
+          Achievements & Certifications
         </h2>
         <p className="text-lg max-w-3xl mx-auto text-muted-foreground">
-          Recognitions of my commitment to excellence in cardiology and patient
-          care.
+          Recognitions of my commitment to excellence and continuous learning.
         </p>
       </div>
 
@@ -98,7 +97,7 @@ export default function Awards() {
                       {award.title}
                     </h3>
                     <p className="text-muted-foreground font-semibold">
-                      {award.issuer} - {award.year}
+                      {award.issuer}{award.year && ` - ${award.year}`}
                     </p>
                     <div className="absolute top-4 right-4 text-yellow-500 flex gap-1">
                       <Star className="w-4 h-4 fill-current" />
