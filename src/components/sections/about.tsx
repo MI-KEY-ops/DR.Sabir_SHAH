@@ -23,8 +23,6 @@ const aboutCards = [
   },
 ];
 
-const basePath = nextConfig.basePath || '';
-
 export default function About() {
   return (
     <SectionWrapper id="about" className="bg-secondary">
@@ -53,7 +51,7 @@ export default function About() {
           >
             <div className="relative aspect-[3/4] rounded-lg overflow-hidden shadow-2xl group">
               <Image
-                src={`${basePath}/dr-sabir-shah.jpg`}
+                src="/dr-sabir-shah.jpg"
                 alt="Dr. Sabir Shah"
                 width={600}
                 height={800}
