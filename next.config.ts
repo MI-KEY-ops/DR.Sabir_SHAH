@@ -1,6 +1,6 @@
 import type {NextConfig} from 'next';
 
-const repoName = 'your-repo-name';
+const repoName = 'DR.Sabir_SHAH';
 
 const nextConfig: NextConfig = {
   output: 'export',
