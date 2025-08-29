@@ -1,12 +1,12 @@
 import type {NextConfig} from 'next';
 
 const repoName = 'DR.Sabir_SHAH';
+const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig: NextConfig = {
   output: 'export',
-  // IMPORTANT: Replace 'your-repo-name' with the name of your GitHub repository.
-  basePath: process.env.NODE_ENV === 'production' ? `/${repoName}` : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? `/${repoName}/` : '',
+  basePath: isProd ? `/${repoName}` : '',
+  assetPrefix: isProd ? `/${repoName}/` : '',
   images: {
     unoptimized: true,
   },

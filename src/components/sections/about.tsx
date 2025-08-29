@@ -6,6 +6,9 @@ import { SectionWrapper } from "@/components/section-wrapper";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { EkgLine } from "@/components/icons";
 import { BadgeCheck, GraduationCap } from "lucide-react";
+import nextConfig from "../../../next.config";
+
+const basePath = nextConfig.basePath || "";
 
 const aboutCards = [
   {
@@ -50,7 +53,7 @@ export default function About() {
           >
             <div className="relative aspect-[3/4] rounded-lg overflow-hidden shadow-2xl group">
               <Image
-                src="/dr-sabir-shah.jpg"
+                src={`${basePath}/dr-sabir-shah.jpg`}
                 alt="Dr. Sabir Shah"
                 width={600}
                 height={800}
