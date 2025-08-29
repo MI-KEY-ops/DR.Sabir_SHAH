@@ -47,46 +47,53 @@ const itemVariants = {
 export default function Skills() {
   return (
     <SectionWrapper id="skills" className="bg-secondary">
-      <div className="text-center mb-12">
-        <h2 className="text-4xl font-bold font-headline text-primary mb-4">
-          Professional Skills
-        </h2>
-        <p className="text-lg max-w-3xl mx-auto text-muted-foreground">
-          A combination of clinical expertise, leadership, and community health skills.
-        </p>
-      </div>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.1 }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
+      >
+        <div className="text-center mb-12">
+          <h2 className="text-4xl font-bold font-headline text-primary mb-4">
+            Professional Skills
+          </h2>
+          <p className="text-lg max-w-3xl mx-auto text-muted-foreground">
+            A combination of clinical expertise, leadership, and community health skills.
+          </p>
+        </div>
 
-      <TooltipProvider>
-        <motion.div
-          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-8"
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
-        >
-          {skills.map((skill) => (
-            <Tooltip key={skill.name}>
-              <TooltipTrigger asChild>
-                <motion.div
-                  className="group flex flex-col items-center gap-4 cursor-pointer"
-                  variants={itemVariants}
-                  whileHover={{ scale: 1.1, y: -5 }}
-                >
-                  <div className="p-6 bg-card rounded-full shadow-lg group-hover:bg-accent group-hover:shadow-xl transition-all duration-300">
-                    <skill.icon className="w-10 h-10 text-primary group-hover:text-accent-foreground transition-colors" />
-                  </div>
-                  <p className="text-sm font-semibold text-center text-foreground">
-                    {skill.name}
-                  </p>
-                </motion.div>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>{skill.detail}</p>
-              </TooltipContent>
-            </Tooltip>
-          ))}
-        </motion.div>
-      </TooltipProvider>
+        <TooltipProvider>
+          <motion.div
+            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-8"
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+          >
+            {skills.map((skill) => (
+              <Tooltip key={skill.name}>
+                <TooltipTrigger asChild>
+                  <motion.div
+                    className="group flex flex-col items-center gap-4 cursor-pointer"
+                    variants={itemVariants}
+                    whileHover={{ scale: 1.1, y: -5 }}
+                  >
+                    <div className="p-6 bg-card rounded-full shadow-lg group-hover:bg-accent group-hover:shadow-xl transition-all duration-300">
+                      <skill.icon className="w-10 h-10 text-primary group-hover:text-accent-foreground transition-colors" />
+                    </div>
+                    <p className="text-sm font-semibold text-center text-foreground">
+                      {skill.name}
+                    </p>
+                  </motion.div>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>{skill.detail}</p>
+                </TooltipContent>
+              </Tooltip>
+            ))}
+          </motion.div>
+        </TooltipProvider>
+      </motion.div>
     </SectionWrapper>
   );
 }
