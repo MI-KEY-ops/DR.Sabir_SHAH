@@ -4,6 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
 import { StethoscopeIcon } from "@/components/icons";
+import { useState, useEffect } from "react";
 
 const titleContainer = {
   hidden: { opacity: 0 },
@@ -21,7 +22,46 @@ const titleItem = {
   show: { y: 0, opacity: 1, transition: { duration: 0.5, ease: "easeOut" } },
 };
 
+const subtitleText =
+  "A passionate medical doctor who heals with a stethoscope in hand and advocates for a healthier world through dedicated social activism.";
+const words = subtitleText.split(" ");
+
+const subtitleContainer = {
+  hidden: { opacity: 1 },
+  visible: (i = 1) => ({
+    opacity: 1,
+    transition: { staggerChildren: 0.08, delayChildren: i * 0.1 },
+  }),
+};
+
+const wordAnimation = {
+  hidden: {
+    opacity: 0,
+    y: 20,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: "spring",
+      damping: 12,
+      stiffness: 200,
+    },
+  },
+};
+
 export default function Hero() {
+  const [animationKey, setAnimationKey] = useState(0);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setAnimationKey((prevKey) => prevKey + 1);
+    }, words.length * 80 + 3000); // Animation duration + 3s pause
+
+    return () => clearTimeout(timer);
+  }, [animationKey]);
+
+
   return (
     <section
       id="home"
@@ -84,10 +124,21 @@ export default function Hero() {
             Dr. Sabir Shah
           </motion.h1>
           <motion.p
-            variants={titleItem}
+            key={animationKey}
+            variants={subtitleContainer}
+            initial="hidden"
+            animate="visible"
             className="mt-4 max-w-md text-xl text-muted-foreground sm:max-w-2xl md:text-2xl"
           >
-            Medical Officer
+            {words.map((word, index) => (
+              <motion.span
+                key={index}
+                variants={wordAnimation}
+                style={{ display: "inline-block", marginRight: "0.4rem" }}
+              >
+                {word}
+              </motion.span>
+            ))}
           </motion.p>
         </motion.div>
       </div>
