@@ -50,7 +50,7 @@ export default function About() {
           >
             <div className="relative aspect-[3/4] rounded-lg overflow-hidden shadow-2xl group">
               <Image
-                src="https://picsum.photos/600/800"
+                src="/dr-sabir-shah.jpg"
                 alt="Dr. Sabir Shah"
                 width={600}
                 height={800}
