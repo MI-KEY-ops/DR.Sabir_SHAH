@@ -3,7 +3,7 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'Vitae - Dr. Sabir Shah',
+  title: 'Dr. Sabir Shah',
   description: 'Portfolio of Dr. Sabir Shah, Medical Officer',
 };
 
