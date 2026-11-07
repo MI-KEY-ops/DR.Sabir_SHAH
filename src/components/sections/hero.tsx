@@ -2,8 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowDown } from "lucide-react";
-import { StethoscopeIcon } from "@/components/icons";
+import { ArrowDown, Stethoscope } from "lucide-react";
 import { useState, useEffect } from "react";
 
 const titleContainer = {
@@ -99,7 +98,7 @@ export default function Hero() {
           }}
         >
           <motion.div
-            animate={{ scale: [1, 1.05, 1] }}
+            animate={{ scale: [1, 1.06, 0.98, 1.07, 1] }}
             transition={{
               duration: 2,
               repeat: Infinity,
@@ -107,7 +106,7 @@ export default function Hero() {
               ease: "easeInOut",
             }}
           >
-            <StethoscopeIcon className="w-24 h-24 mx-auto text-primary" />
+            <Stethoscope className="w-24 h-24 mx-auto text-primary" />
           </motion.div>
         </motion.div>
 
